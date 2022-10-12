@@ -1,0 +1,46 @@
+[
+  {
+    "projectName": "LSR Creative Portfolio Website",
+    "subtitleName": "GRAPHIC DESIGN WEBSITE",
+    "description": "LSR Creative is a graphic design portfolio website I built for my wife. I built it using primarily JavaScript, React, NextJS, GraphQL and GraphCMS.",
+    "url": "https://lsrcreative.art",
+    "images": [
+      {
+        "src": "../images/lsr_creative_image_one.jpg",
+        "alt": "LSR Creative landing page"
+      },
+      {
+        "src": "../images/lsr_creative_image_two.jpg",
+        "alt": "LSR Creative portfolio page"
+      },
+      {
+        "src": "../images/lsr_creative_image_three.jpg",
+        "alt": "LSR Creative side navigation"
+      }
+    ]
+  },
+  {
+    "projectName": "Chevrolet Electric Brand Website",
+    "subtitleName": "MARKETING WEBSITE FOR CHEVROLET ELECTRIC VEHICLES",
+    "description": "Chevrolet electric is a marketing website to showcase the latest electric vehicles customers can purchase or preorder from General Motors. The site was built using TypeScript, React, NextJS, and Strapi.",
+    "url": "https://www.chevrolet.com/electric",
+    "images": [
+      {
+        "src": "../images/chevrolet_image_one.jpg",
+        "alt": "Chevrolet Electric request information leads form"
+      },
+      {
+        "src": "../images/chevrolet_image_two.jpg",
+        "alt": "Chevrolet Electric EV Benefits section"
+      },
+      {
+        "src": "../images/chevrolet_image_three.jpg",
+        "alt": "Chevrolet Electric Bolt EUV 2023 Hero section"
+      },
+      {
+        "src": "../images/chevrolet_image_four.jpg",
+        "alt": "Chevrolet Electric Mapbox dealer Locator"
+      }
+    ]
+  }
+]

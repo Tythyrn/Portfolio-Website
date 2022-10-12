@@ -1,47 +1,43 @@
 import React, {useState} from 'react';
-import { Box, Button } from 'theme-ui';
-
-type portFolioDataType = {
-  projectName: string;
-  subtitleName: string;
-  url: string;
-  images: string[];
-}
+import {FiChevronRight, FiChevronLeft} from 'react-icons/fi'
+import { Box } from 'theme-ui';
 
 interface CarouselItemProps {
-  image: string;
+  image: Record<string, string>;
   width: string;
 }
 
 interface CarouselProps {
-  portFolioData: portFolioDataType;
+  images: Record<string, string>[];
 }
 
 const CarouselItem = ({image, width}: CarouselItemProps) => {
   return (
     <Box
       sx={{
+        background: `url("${image.src}") center center / cover`,
         width: width,
         display: 'inline-flex',
         alignItems: 'center',
         justifyContent: 'center',
-        height: '200px',
-        backgroundColor: 'green',
-        color: '#fff'
+        height: '250px',
+        color: '#fff',
+        '@media screen and (min-width: 600px)': {
+          height: '450px'
+        }
       }}
     >
-      {image}
     </Box>
   );
 };
 
-export const Carousel = ({portFolioData}: CarouselProps) => {
+export const Carousel = ({images}: CarouselProps) => {
   const [activeIdx, setActiveIdx] = useState(0);
 
   const updateIndex = (newIndex: number) => {
     if (newIndex < 0) {
-      newIndex = portFolioData.images.length - 1;
-    } else if (newIndex >= portFolioData.images.length) {
+      newIndex = images.length - 1;
+    } else if (newIndex >= images.length) {
       newIndex = 0;
     }
 
@@ -49,15 +45,49 @@ export const Carousel = ({portFolioData}: CarouselProps) => {
   }
 
   return (
-    <Box sx={{overflow: 'hidden'}}>
-      <Box sx={{transform: `translateX(-${activeIdx * 100}%)`, whiteSpace: 'nowrap', transition: 'transform 0.3s'}}>
-        {portFolioData.images.map((image, index) => {
+    <Box sx={{overflow: 'hidden', position: 'relative'}}>
+      <Box sx={{transform: `translateX(-${activeIdx * 100}%)`, whiteSpace: 'nowrap', transition: 'transform 0.8s', background: '#222'}}>
+        {images.map((image, index) => {
           return <CarouselItem key ={index} image={image} width={'100%'} />
         })}
       </Box>
-      <Box sx={{display: 'flex', justifyContent: 'center'}}>
-        <Button sx={{margin: '5px'}} onClick={() => updateIndex(activeIdx - 1)}> Prev</Button>
-        <Button sx={{margin: '5px'}} onClick={() => updateIndex(activeIdx + 1)}>Next</Button>
+      <Box sx={{
+        position: 'absolute', 
+        bottom: 0, 
+        left: 0, 
+        color: 'white', 
+        cursor: 'pointer', 
+        padding: '10px 15px', 
+        background: 'rgba(0, 0, 0, 0.5)', 
+        '& svg': { 
+          display: 'block',
+          fontSize: '14px',
+          '@media screen and (min-width: 600px)': {
+            fontSize: '25px'
+          }
+        }
+      }} 
+        onClick={() => updateIndex(activeIdx - 1)}>
+          <FiChevronLeft/>
+      </Box>
+      <Box sx={{
+        position: 'absolute', 
+        bottom: 0, 
+        right: 0, 
+        color: 'white', 
+        cursor: 'pointer', 
+        padding: '10px 15px', 
+        background: 'rgba(0, 0, 0, 0.5)', 
+        '& svg': { 
+          display: 'block',
+          fontSize: '14px',
+          '@media screen and (min-width: 600px)': {
+            fontSize: '25px'
+          }
+        }
+      }} 
+        onClick={() => updateIndex(activeIdx + 1)}>
+          <FiChevronRight/>
       </Box>
     </Box>
   );

@@ -1,20 +1,19 @@
-import { ThemeProvider } from 'theme-ui'
+import { ThemeProvider, Button } from 'theme-ui'
+import 'normalize.css';
 import { theme } from './theme'
-import React from 'react';
-import { Carousel } from './components/Carousel';
-
-const projectDataTest = {
-  projectName: "Test project name",
-  subtitleName: "test subtitle name",
-  url: "test url",
-  images: ["image1", "image2"]
-}
+import React, { useState } from 'react';
+import { Modal } from './components/Modal';
+import projectData from './data/projectData.json'
 
 
 export const App = () => {
+    const [show, setShow] = useState(false);
+    const [activeIdx, setActiveIdx] = useState(0);
+
     return (
     <ThemeProvider theme={theme}>
-      <Carousel portFolioData={projectDataTest} />
+      <Button onClick={() =>{setShow(true); setActiveIdx(1)}}>Open Modal</Button>
+      <Modal show={show} onClose={() => setShow(false)} data={projectData[activeIdx]}/>
     </ThemeProvider>
   );
 }
