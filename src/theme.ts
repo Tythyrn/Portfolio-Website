@@ -2,8 +2,8 @@ import type { Theme } from 'theme-ui'
 
 export const theme: Theme = {
   fonts: {
-    body: 'Montserrat,  serif',
-    heading: '"Esteban", sans-serif',
+    body: '"Open Sans",  sans-serif',
+    heading: '"Source Sans Pro", sans-serif',
   },
   breakpoints: ['600px'],
   colors: {
