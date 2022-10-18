@@ -8,7 +8,6 @@
     "types": ["react/next", "react-dom/next"],
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true,
     "sourceMap": true,
     "allowJs": true,
     "jsx": "react",
