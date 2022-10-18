@@ -7,19 +7,19 @@
     "buttonText": "VIEW SITE",
     "images": [
       {
-        "src": "../images/chevrolet_image_three.jpg",
+        "src": "/images/chevrolet_image_three.jpg",
         "alt": "Chevrolet Electric Bolt EUV 2023 Hero section"
       },
       {
-        "src": "../images/chevrolet_image_one.jpg",
+        "src": "/images/chevrolet_image_one.jpg",
         "alt": "Chevrolet Electric request information leads form"
       },
       {
-        "src": "../images/chevrolet_image_two.jpg",
+        "src": "/images/chevrolet_image_two.jpg",
         "alt": "Chevrolet Electric EV Benefits section"
       },
       {
-        "src": "../images/chevrolet_image_four.jpg",
+        "src": "/images/chevrolet_image_four.jpg",
         "alt": "Chevrolet Electric Mapbox dealer Locator"
       }
     ]
@@ -32,7 +32,7 @@
     "buttonText": "VIEW SITE",
     "images": [
       {
-        "src": "../images/ultra_compose_image_one.jpg",
+        "src": "/images/ultra_compose_image_one.jpg",
         "alt": "Photo by Ketut Subiyanto"
       }
     ]
@@ -45,15 +45,15 @@
     "url": "https://lsrcreative.art",
     "images": [
       {
-        "src": "../images/lsr_creative_image_one.jpg",
+        "src": "/images/lsr_creative_image_one.jpg",
         "alt": "LSR Creative landing page"
       },
       {
-        "src": "../images/lsr_creative_image_two.jpg",
+        "src": "/images/lsr_creative_image_two.jpg",
         "alt": "LSR Creative portfolio page"
       },
       {
-        "src": "../images/lsr_creative_image_three.jpg",
+        "src": "/images/lsr_creative_image_three.jpg",
         "alt": "LSR Creative side navigation"
       }
     ]
@@ -66,11 +66,11 @@
     "buttonText": "VIEW SOURCE CODE",
     "images": [
       {
-        "src": "../images/treehouse_project_5_image_1.png",
+        "src": "/images/treehouse_project_5_image_1.png",
         "alt": "Treehouse Project 5 Employee Directory"
       },
       {
-        "src": "../images/treehouse_project_5_image_2.png",
+        "src": "/images/treehouse_project_5_image_2.png",
         "alt": "Treehouse Project 5 Employee Directory"
       }
     ]
@@ -83,15 +83,15 @@
     "buttonText": "VIEW SOURCE CODE",
     "images": [
       {
-        "src": "../images/treehouse_project_7_image_1.png",
+        "src": "/images/treehouse_project_7_image_1.png",
         "alt": "Treehouse Project 7 Photo Gallery"
       },
       {
-        "src": "../images/treehouse_project_7_image_2.png",
+        "src": "/images/treehouse_project_7_image_2.png",
         "alt": "Treehouse Project 7 Photo Gallery"
       },
       {
-        "src": "../images/treehouse_project_7_image_3.png",
+        "src": "/images/treehouse_project_7_image_3.png",
         "alt": "Treehouse Project 7 Photo Gallery"
       }
     ]
@@ -104,23 +104,23 @@
     "buttonText": "VIEW SOURCE CODE",
     "images": [
       {
-        "src": "../images/treehouse_project_10_image_1.png",
+        "src": "/images/treehouse_project_10_image_1.png",
         "alt": "Treehouse Project 10 Full Stack School Course Application"
       },
       {
-        "src": "../images/treehouse_project_10_image_2.png",
+        "src": "/images/treehouse_project_10_image_2.png",
         "alt": "Treehouse Project 10 Full Stack School Course Application"
       },
       {
-        "src": "../images/treehouse_project_10_image_3.png",
+        "src": "/images/treehouse_project_10_image_3.png",
         "alt": "Treehouse Project 10 Full Stack School Course Application"
       },
       {
-        "src": "../images/treehouse_project_10_image_4.png",
+        "src": "/images/treehouse_project_10_image_4.png",
         "alt": "Treehouse Project 10 Full Stack School Course Application"
       },
       {
-        "src": "../images/treehouse_project_10_image_5.png",
+        "src": "/images/treehouse_project_10_image_5.png",
         "alt": "Treehouse Project 10 Full Stack School Course Application"
       }
     ]
