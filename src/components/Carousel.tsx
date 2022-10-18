@@ -16,7 +16,7 @@ const CarouselItem = ({image, width}: CarouselItemProps) => {
   return (
     <Box
       sx={{
-        background: `url("${image.src}") center center / cover`,
+        background: `url("${process.env.PUBLIC_URL + image.src}") center center / cover`,
         width: width,
         display: 'inline-flex',
         alignItems: 'center',

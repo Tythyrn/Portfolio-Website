@@ -32,7 +32,7 @@ export const ProjectGrid = ({projects}: ProjectGridProps) => {
           <Box sx={{position: 'relative'}} onMouseEnter={() => setHoverIdx(index)} onMouseLeave={() => setHoverIdx(undefined)} key={index}>
             <Box sx={{
               transition: 'opacity 0.3s',
-              background: `url("${project.images[0].src}") center center / cover`,
+              background: `url("${process.env.PUBLIC_URL + project.images[0].src}") center center / cover`,
               opacity: hoverIdx === index ? 0 : 1,
               width: [`calc(100vw - ${scrollbarWidth}px)`, '390px'],
               height: '300px'
