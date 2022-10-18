@@ -1,18 +1,20 @@
-import { ThemeProvider } from 'theme-ui'
-import { Box, Text } from 'theme-ui';
-import { theme } from './theme'
+import { ThemeProvider } from 'theme-ui';
 import React from 'react';
+import 'normalize.css';
+import { theme } from './theme';
+import {Portfolio} from './sections/Portfolio'
+import projectData from './data/projectData.json'
+
 
 export const App = () => {
+    // const [show, setShow] = useState(false);
+    // const [activeIdx, setActiveIdx] = useState(0);
+
     return (
     <ThemeProvider theme={theme}>
-      <Box>
-        <header>
-          <Text>
-            Edit and save to reload.
-          </Text>
-        </header>
-      </Box>
+      <React.StrictMode>
+        <Portfolio projects={projectData}/>
+      </React.StrictMode>
     </ThemeProvider>
   );
 }
