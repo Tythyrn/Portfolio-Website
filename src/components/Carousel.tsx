@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {FiChevronRight, FiChevronLeft} from 'react-icons/fi'
 import { Box } from 'theme-ui';
 
@@ -9,6 +9,7 @@ interface CarouselItemProps {
 
 interface CarouselProps {
   images: Record<string, string>[];
+  show: boolean;
 }
 
 const CarouselItem = ({image, width}: CarouselItemProps) => {
@@ -31,8 +32,12 @@ const CarouselItem = ({image, width}: CarouselItemProps) => {
   );
 };
 
-export const Carousel = ({images}: CarouselProps) => {
+export const Carousel = ({images, show}: CarouselProps) => {
   const [activeIdx, setActiveIdx] = useState(0);
+
+  useEffect(() => {
+    setActiveIdx(0);
+  }, [show]);
 
   const updateIndex = (newIndex: number) => {
     if (newIndex < 0) {
@@ -45,8 +50,8 @@ export const Carousel = ({images}: CarouselProps) => {
   }
 
   return (
-    <Box sx={{overflow: 'hidden', position: 'relative'}}>
-      <Box sx={{transform: `translateX(-${activeIdx * 100}%)`, whiteSpace: 'nowrap', transition: 'transform 0.8s', background: '#222'}}>
+    <Box sx={{overflow: 'hidden', position: 'relative', background: '#222'}}>
+      <Box sx={{transform: `translateX(-${activeIdx * 100}%)`, whiteSpace: 'nowrap', transition: 'transform 0.8s'}}>
         {images.map((image, index) => {
           return <CarouselItem key ={index} image={image} width={'100%'} />
         })}

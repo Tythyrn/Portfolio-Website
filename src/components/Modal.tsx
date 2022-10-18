@@ -7,13 +7,7 @@ import {FiExternalLink, FiX} from 'react-icons/fi'
 interface ModalProps {
   show: boolean;
   onClose: () => void;
-  data:  {
-    projectName: string;
-    subtitleName: string;
-    description: string;
-    url: string;
-    images: Record<string, string>[];
-  };
+  data:  Record<string, any>;
 }
 
 export const Modal = ({show, onClose, data}: ModalProps) => {
@@ -85,7 +79,7 @@ export const Modal = ({show, onClose, data}: ModalProps) => {
           }
         }}
       >
-        <Carousel images={data.images}/>
+        <Carousel images={data.images} show={show}/>
         <Box
           sx={{
             borderTop: '3px solid #1b242f',
@@ -115,7 +109,7 @@ export const Modal = ({show, onClose, data}: ModalProps) => {
               }
             }}>
               <FiExternalLink />
-              VIEW SITE
+              {data.buttonText}
             </Button>
           </Link>
         </Box>

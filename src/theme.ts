@@ -5,6 +5,7 @@ export const theme: Theme = {
     body: '"Open Sans",  sans-serif',
     heading: '"Source Sans Pro", sans-serif',
   },
+  breakpoints: ['600px'],
   colors: {
     main: '#444',
     accent: '#c0c0c0',
@@ -23,6 +24,17 @@ export const theme: Theme = {
     portfolioDescription: {
       fontFamily: 'body',
       color: 'main',
+    },
+    heading: {
+      fontFamily: 'heading',
+      color: 'main',
+      fontSize: ['40px', '50px']
+    },
+    gridHeading: {
+      fontFamily: 'heading',
+      color: 'main',
+      fontSize: '24px',
+      fontWeight: 'bold'
     }
   },
   buttons: {
@@ -31,6 +43,18 @@ export const theme: Theme = {
       color: 'white',
       backgroundColor: 'blue',
       padding: '11px 20px',
+    },
+    outlinePrimary: {
+      fontFamily: 'body',
+      color: 'main',
+      backgroundColor: 'white',
+      border: '2px solid',
+      borderColor: 'blue',
+      padding: '11px 20px',
+      '&:hover': {
+        color: 'white',
+        backgroundColor: 'blue',
+      }
     }
-  },
+  }
 }
