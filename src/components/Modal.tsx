@@ -34,7 +34,7 @@ export const Modal = ({show, onClose, data}: ModalProps) => {
         left: 0, 
         right: 0,
         bottom: 0,
-        height: '100vh',
+        height: '100%',
         pointerEvents: show ? 'initial' : 'none',
         position: 'fixed',
         width: '100vw',
@@ -67,7 +67,7 @@ export const Modal = ({show, onClose, data}: ModalProps) => {
           boxShadow: '0 0 10px rgb(0 0 0 / 40%)',
           boxSizing: 'border-box',
           color: '#333',
-          height: '100vh',
+          height: '100%',
           opacity: show ? 1 : 0,
           position: 'relative',
           textAlign: 'left',
@@ -85,6 +85,7 @@ export const Modal = ({show, onClose, data}: ModalProps) => {
             borderTop: '3px solid #1b242f',
             color: '#444',
             padding: '15px 10px 85px 10px',
+            overflowY: 'scroll',
             '@media screen and (min-width: 600px)': {
               padding: '35px 60px 90px 25px',
             }
