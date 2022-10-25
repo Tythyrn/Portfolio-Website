@@ -35,6 +35,16 @@ export const theme: Theme = {
       color: 'main',
       fontSize: '24px',
       fontWeight: 'bold'
+    },
+    hero: {
+      fontFamily: 'heading',
+      color: 'white',
+      fontSize: '20px'
+    },
+    footer: {
+      fontFamily: 'body',
+      color: 'accent',
+      fontSize: '12px'
     }
   },
   buttons: {
