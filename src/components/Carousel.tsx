@@ -56,44 +56,48 @@ export const Carousel = ({images, show}: CarouselProps) => {
           return <CarouselItem key ={index} image={image} width={'100%'} />
         })}
       </Box>
-      <Box sx={{
-        position: 'absolute', 
-        bottom: 0, 
-        left: 0, 
-        color: 'white', 
-        cursor: 'pointer', 
-        padding: '10px 15px', 
-        background: 'rgba(0, 0, 0, 0.5)', 
-        '& svg': { 
-          display: 'block',
-          fontSize: '14px',
-          '@media screen and (min-width: 600px)': {
-            fontSize: '25px'
-          }
-        }
-      }} 
-        onClick={() => updateIndex(activeIdx - 1)}>
-          <FiChevronLeft/>
-      </Box>
-      <Box sx={{
-        position: 'absolute', 
-        bottom: 0, 
-        right: 0, 
-        color: 'white', 
-        cursor: 'pointer', 
-        padding: '10px 15px', 
-        background: 'rgba(0, 0, 0, 0.5)', 
-        '& svg': { 
-          display: 'block',
-          fontSize: '14px',
-          '@media screen and (min-width: 600px)': {
-            fontSize: '25px'
-          }
-        }
-      }} 
-        onClick={() => updateIndex(activeIdx + 1)}>
-          <FiChevronRight/>
-      </Box>
+      {images.length !== 1 && (
+        <Box>
+          <Box sx={{
+            position: 'absolute', 
+            bottom: 0, 
+            left: 0, 
+            color: 'white', 
+            cursor: 'pointer', 
+            padding: '10px 15px', 
+            background: 'rgba(0, 0, 0, 0.5)', 
+            '& svg': { 
+              display: 'block',
+              fontSize: '14px',
+              '@media screen and (min-width: 600px)': {
+                fontSize: '25px'
+              }
+            }
+          }} 
+            onClick={() => updateIndex(activeIdx - 1)}>
+              <FiChevronLeft/>
+          </Box>
+          <Box sx={{
+            position: 'absolute', 
+            bottom: 0, 
+            right: 0, 
+            color: 'white', 
+            cursor: 'pointer', 
+            padding: '10px 15px', 
+            background: 'rgba(0, 0, 0, 0.5)', 
+            '& svg': { 
+              display: 'block',
+              fontSize: '14px',
+              '@media screen and (min-width: 600px)': {
+                fontSize: '25px'
+              }
+            }
+          }} 
+            onClick={() => updateIndex(activeIdx + 1)}>
+              <FiChevronRight/>
+          </Box>
+        </Box>
+      )}
     </Box>
   );
 }
