@@ -86,7 +86,7 @@ export const Modal = ({show, onClose, data}: ModalProps) => {
             color: '#444',
             padding: '15px 10px 85px 10px',
             '@media screen and (min-width: 600px)': {
-              padding: '35px 60px 90px 25px',
+              padding: '25px 60px 90px 25px',
             }
           }}
         >
