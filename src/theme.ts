@@ -37,7 +37,7 @@ export const theme: Theme = {
     body: {
       fontFamily: 'body',
       color: 'main',
-      fontSize: 'clamp(14px, 5vw, 16px)',
+      fontSize: 'clamp(12px, 4vw, 16px)',
       lineHeight: '22px'
     },
     heading: {
