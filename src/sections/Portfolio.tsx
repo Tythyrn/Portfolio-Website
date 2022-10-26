@@ -11,7 +11,7 @@ export const Portfolio = ({projects}: PortfolioProps) => {
 
   return (
     <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', py: '70px'}} id='projects'>
-      <Text variant={'heading'}>PROJECTS</Text>
+      <Text variant={'heading'}>Projects</Text>
       <Box sx={{
         '& svg': {
           display: 'block',

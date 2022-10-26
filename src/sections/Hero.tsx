@@ -28,13 +28,9 @@ const Trail = ({children}: TrailProps) => {
       ))}
     </Box>
   )
-
 }
 
 export const Hero = () => {
-
-  
-
   return (
     <Box sx={{
       px: ['25px', '50px', '100px', '150px'],

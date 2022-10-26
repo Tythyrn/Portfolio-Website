@@ -8,13 +8,7 @@ interface ProjectGridProps {
 
 export const ProjectGrid = ({projects}: ProjectGridProps) => {
   const [activeIdx, setActiveIdx] = useState<number>(0);
-  // const [hoverIdx, setHoverIdx] = useState<number | undefined>(undefined);
   const [showModal, setShowModal] = useState(false);
-  // const [scrollbarWidth, setScrollbarWidth] = useState(0);
-
-  // useEffect(() => {
-  //   setScrollbarWidth(window.innerWidth - document.body.clientWidth);
-  // },[]);
 
   return (
     <Box 
@@ -68,7 +62,6 @@ export const ProjectGrid = ({projects}: ProjectGridProps) => {
               filter: 'grayscale(100%)',
               opacity: 0.1,
               background: `url("${process.env.PUBLIC_URL + project.images[0].src}") center center / cover`,
-              // opacity: hoverIdx === index ? 0 : 1,
               width: [`calc(100vw - 40px)`, '390px'],
               height: '300px'
             }}/>
