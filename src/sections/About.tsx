@@ -36,17 +36,16 @@ export const About = () => {
         <Box sx={{
           display: ['block', 'block', 'grid'],
           gridTemplateColumns: '3fr 2fr',
-          gap: '50px',
         }}>
           <Box sx={{
             display: 'flex',
             flexDirection: 'column',
-            gap: '20px',
+            mr: ['0', '0', '50px', '50px']
           }}>
-            <Text variant='body'>Hello! My name is Kendall Rundquist. I have always had a passion for technology and building things. As a child, I enjoyed building countless LEGO sets and eventually building computers for myself and various friends.</Text>
-            <Text variant='body'>In college, I decided to pursue the business side of Information Technology, graduating with a B.B.A. in Management Information Systems in 2015. It wasn't until 2020 that I decided to pursue a new career as a software engineer.</Text>
-            <Text variant='body'>I started teaching myself programming at night, and applying the skills I was learning to my new position as a software developer during the day. I rediscovered that same enthusiam and passion in developing websites that I would get as a child building LEGO sets and that passion has fueled my career to this day.</Text>
-            <Text variant='body'>Below are some technologies I am currently using:</Text>
+            <Text variant='body' sx={{mb: '20px'}}>Hello! My name is Kendall Rundquist. I have always had a passion for technology and building things. As a child, I enjoyed building countless LEGO sets and eventually building computers for myself and various friends.</Text>
+            <Text variant='body' sx={{mb: '20px'}}>In college, I decided to pursue the business side of Information Technology, graduating with a B.B.A. in Management Information Systems in 2015. It wasn't until 2020 that I decided to pursue a new career as a software engineer.</Text>
+            <Text variant='body' sx={{mb: '20px'}}>I started teaching myself programming at night, and applying the skills I was learning to my new position as a software developer during the day. I rediscovered that same enthusiam and passion in developing websites that I would get as a child building LEGO sets and that passion has fueled my career to this day.</Text>
+            <Text variant='body' sx={{mb: '20px'}}>Below are some technologies I am currently using:</Text>
             <Box sx={{
               display: 'grid',
               gridTemplateColumns: 'repeat(2, minmax(140px, 200px))',

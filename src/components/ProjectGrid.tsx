@@ -18,12 +18,11 @@ export const ProjectGrid = ({projects}: ProjectGridProps) => {
       justifyContent: 'center', 
       py: '30px',
       flexWrap: 'wrap',
-      gap: '20px',
       maxWidth: '1300px',
     }}>
       {projects.map((project, index) => {
         return (
-          <Box sx={{position: 'relative'}} key={index}>
+          <Box sx={{position: 'relative', margin:  '10px'}} key={index}>
             <Box sx={{
               bg: 'yellow',
               position: 'absolute',
@@ -44,14 +43,14 @@ export const ProjectGrid = ({projects}: ProjectGridProps) => {
                 flexDirection: 'column',
                 m: '20px',
                 height: '260px',
-                gap: '15px',
               }}>
-                <Text variant={'gridHeading'}>{project.projectName}</Text>
+                <Text sx={{mb: '15px'}} variant={'gridHeading'}>{project.projectName}</Text>
                 <Text variant={'gridDescription'}>{project.shortDescription}</Text>
                 <Text variant={'gridTech'} sx={{mt: 'auto'}}>{project.technologies}</Text>
                 <Button onClick={() => {setActiveIdx(index); setShowModal(true)}} variant={'outlinePrimary'} sx={{
                   width: '170px',
                   cursor: 'pointer',
+                  mt: '15px',
                 }}>
                   LEARN MORE
                 </Button>

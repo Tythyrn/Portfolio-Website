@@ -14,7 +14,6 @@ export const Footer = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        gap: '30px',
       }}>
         <Link href='https://www.linkedin.com/in/kendall-rundquist/' target={'_blank'}>
           <Box sx={{
@@ -43,7 +42,7 @@ export const Footer = () => {
             <GrLinkedin />
           </Box>
         </Link>
-        <Link href='https://github.com/Tythyrn' target={'_blank'}>
+        <Link href='https://github.com/Tythyrn' target={'_blank'} sx={{mx: '30px'}}>
           <Box sx={{
             bg: '#2b3643',
             cursor: 'pointer',

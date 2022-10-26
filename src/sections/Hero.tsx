@@ -50,7 +50,6 @@ export const Hero = () => {
         <Box sx={{
           display: 'flex',
           flexDirection: 'column',
-          gap: '5px',
         }}>
           <Trail>
             <Text variant={'hero1'}>Hi! My name is</Text>
