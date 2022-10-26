@@ -10,12 +10,12 @@ interface PortfolioProps {
 export const Portfolio = ({projects}: PortfolioProps) => {
 
   return (
-    <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', backgroundColor: '#f5f5f5', py: '70px'}}>
-      <Text as={'h1'} variant={'heading'}>PROJECTS</Text>
+    <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', py: '70px'}} id='projects'>
+      <Text variant={'heading'}>PROJECTS</Text>
       <Box sx={{
         '& svg': {
           display: 'block',
-          color: '#444',
+          color: 'main',
           size: '45px',
           mb: '25px'
         }

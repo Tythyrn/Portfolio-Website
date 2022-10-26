@@ -63,7 +63,7 @@ export const Modal = ({show, onClose, data}: ModalProps) => {
           maxWidth: '700px',
           width: window.innerWidth < 700 ? `${window.innerWidth}px` : '700px',
           alignItems: 'flex-start',
-          background: '#fff',
+          background: 'darkBlue',
           boxShadow: '0 0 10px rgb(0 0 0 / 40%)',
           boxSizing: 'border-box',
           color: '#333',
@@ -85,7 +85,6 @@ export const Modal = ({show, onClose, data}: ModalProps) => {
             borderTop: '3px solid #1b242f',
             color: '#444',
             padding: '15px 10px 85px 10px',
-            overflowY: 'scroll',
             '@media screen and (min-width: 600px)': {
               padding: '35px 60px 90px 25px',
             }
@@ -95,7 +94,7 @@ export const Modal = ({show, onClose, data}: ModalProps) => {
           <Text as={'h3'} variant='portfolioSubHeading' sx={{borderBottom: '1px solid rgba(0, 0, 0, 0.1)', pb: '15px'}}>{data.subtitleName}</Text>
           <Text as={'p'} variant='portfolioDescription' sx={{mt: '15px'}}>{data.description}</Text>
           <Link href={data.url} target='_blank'>
-            <Button variant={'primary'} sx={{
+            <Button variant={'outlinePrimary'} sx={{
               bottom: '20px',
               cursor: 'pointer',
               left: '10px',
@@ -122,8 +121,12 @@ export const Modal = ({show, onClose, data}: ModalProps) => {
             right: '10px',
             '& svg': {
               display: 'block',
-              color: '#bbb',
-              fontSize: '25px'
+              color: 'main',
+              fontSize: '25px',
+              transition: 'all 0.3s',
+              '&:hover': {
+                color: 'white'
+              }
             }
           }}
           onClick={onClose}
