@@ -13,7 +13,7 @@ export const theme: Theme = {
   },
   breakpoints: ['480px', '768px', '1080px', '1400px'],
   colors: {
-    main: '#aaa',
+    main: '#a8b2d1',
     white: '#fff',
     yellow: '#FFFF82',
     darkBlue: '#131B23',
@@ -21,12 +21,13 @@ export const theme: Theme = {
   text: {
     portfolioHeading: {
       fontFamily: 'heading',
-      color: 'white',
+      fontSize: '28px',
+      color: 'yellow',
     },
     portfolioSubHeading: {
       fontFamily: 'heading',
       fontSize: '16px',
-      color: 'main',
+      color: 'white',
     },
     portfolioDescription: {
       fontFamily: 'body',
@@ -46,9 +47,19 @@ export const theme: Theme = {
     },
     gridHeading: {
       fontFamily: 'heading',
-      color: 'main',
+      color: 'yellow',
       fontSize: '24px',
-      fontWeight: 'bold'
+    },
+    gridDescription: {
+      fontFamily: 'body',
+      color: 'white',
+      fontSize: '16px',
+      lineHeight: '18px'
+    },
+    gridTech: {
+      fontFamily: 'body',
+      color: 'main',
+      fontSize: '14px',
     },
     hero1: {
       fontFamily: 'body',
@@ -74,8 +85,8 @@ export const theme: Theme = {
   buttons: {
     primary: {
       fontFamily: 'body',
-      color: 'white',
-      backgroundColor: 'blue',
+      color: 'darkBlue',
+      backgroundColor: 'yellow',
       padding: '11px 20px',
     },
     outlinePrimary: {
@@ -86,6 +97,7 @@ export const theme: Theme = {
       borderColor: 'yellow',
       padding: '11px 20px',
       transition: 'all 0.3s',
+      cursor: 'pointer',
       '&:hover': {
         color: 'darkBlue',
         backgroundColor: 'yellow',
