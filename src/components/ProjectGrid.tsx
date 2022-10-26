@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Box, Button, Text } from 'theme-ui';
 import {Modal} from './Modal';
 
@@ -10,11 +10,11 @@ export const ProjectGrid = ({projects}: ProjectGridProps) => {
   const [activeIdx, setActiveIdx] = useState<number>(0);
   const [hoverIdx, setHoverIdx] = useState<number | undefined>(undefined);
   const [showModal, setShowModal] = useState(false);
-  const [scrollbarWidth, setScrollbarWidth] = useState(0);
+  // const [scrollbarWidth, setScrollbarWidth] = useState(0);
 
-  useEffect(() => {
-    setScrollbarWidth(window.innerWidth - document.body.clientWidth);
-  },[]);
+  // useEffect(() => {
+  //   setScrollbarWidth(window.innerWidth - document.body.clientWidth);
+  // },[]);
 
   return (
     <Box 
@@ -22,10 +22,10 @@ export const ProjectGrid = ({projects}: ProjectGridProps) => {
       display: 'flex', 
       alignItems: 'center', 
       justifyContent: 'center', 
-      backgroundColor: '#f5f5f5', 
       py: '30px',
       flexWrap: 'wrap',
-      maxWidth: '1200px',
+      gap: '20px',
+      maxWidth: '1300px',
     }}>
       {projects.map((project, index) => {
         return (
@@ -34,7 +34,7 @@ export const ProjectGrid = ({projects}: ProjectGridProps) => {
               transition: 'opacity 0.3s',
               background: `url("${process.env.PUBLIC_URL + project.images[0].src}") center center / cover`,
               opacity: hoverIdx === index ? 0 : 1,
-              width: [`calc(100vw - ${scrollbarWidth}px)`, '390px'],
+              width: [`calc(100vw - 40px)`, '390px'],
               height: '300px'
             }}/>
             <Text variant={'gridHeading'} sx={{

@@ -8,7 +8,7 @@ export const Footer = () => {
   return (
     <Box sx={{
       py: '50px',
-      bg: '#131B23'
+      bg: 'darkBlue'
     }}>
       <Box sx={{
         display: 'flex',
@@ -25,15 +25,19 @@ export const Footer = () => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            transition: 'background 0.3s',
+            transition: 'all 0.3s',
             '&:hover': {
-              bg: '#1b73e3'
+              bg: 'yellow',
+              '& svg':{
+                color: 'darkBlue',
+              }
             },
             '& svg': {
               color: 'white',
               display: 'block',
               width: '24px',
-              height: '24px'
+              height: '24px',
+              transition: 'all 0.3s',
             }
           }}>
             <GrLinkedin />
@@ -48,15 +52,19 @@ export const Footer = () => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            transition: 'background 0.3s',
+            transition: 'all 0.3s',
             '&:hover': {
-              bg: '#1b73e3'
+              bg: 'yellow',
+              '& svg':{
+                color: 'darkBlue',
+              }
             },
             '& svg': {
               color: 'white',
               display: 'block',
               width: '24px',
-              height: '24px'
+              height: '24px',
+              transition: 'all 0.3s',
             }
           }}>
             <GrGithub />
@@ -71,15 +79,19 @@ export const Footer = () => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            transition: 'background 0.3s',
+            transition: 'all 0.3s',
             '&:hover': {
-              bg: '#1b73e3'
+              bg: 'yellow',
+              '& svg':{
+                color: 'darkBlue',
+              }
             },
             '& svg': {
               color: 'white',
               display: 'block',
               width: '24px',
-              height: '24px'
+              height: '24px',
+              transition: 'all 0.3s',
             }
           }}>
             <GrMail />
@@ -91,7 +103,7 @@ export const Footer = () => {
         mt: '30px',
       }}>
         <Text variant='footer'>KENDALL RUNDQUIST </Text>
-        <Text variant='footer'>&copy;{`${year}`}</Text>
+        <Text variant='footer' sx={{color: 'yellow'}}>&copy;{`${year}`}</Text>
       </Box>
     </Box>
   );

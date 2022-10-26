@@ -1,29 +1,43 @@
 import type { Theme } from 'theme-ui'
 
 export const theme: Theme = {
+  styles: {
+    root: {
+      bg: 'darkBlue',
+      scrollBehavior: 'smooth',
+    }
+  },
   fonts: {
     body: '"Open Sans",  sans-serif',
     heading: '"Source Sans Pro", sans-serif',
   },
-  breakpoints: ['600px'],
+  breakpoints: ['480px', '768px', '1080px', '1400px'],
   colors: {
-    main: '#444',
-    accent: '#c0c0c0',
+    main: '#aaa',
     white: '#fff',
-    blue: '#1b73e3',
+    yellow: '#FFFF82',
+    darkBlue: '#131B23',
   },
   text: {
     portfolioHeading: {
       fontFamily: 'heading',
-      color: 'main',
+      color: 'white',
     },
     portfolioSubHeading: {
       fontFamily: 'heading',
-      color: 'accent',
+      fontSize: '16px',
+      color: 'main',
     },
     portfolioDescription: {
       fontFamily: 'body',
+      fontSize: '14px',
       color: 'main',
+    },
+    body: {
+      fontFamily: 'body',
+      color: 'main',
+      fontSize: 'clamp(14px, 5vw, 16px)',
+      lineHeight: '22px'
     },
     heading: {
       fontFamily: 'heading',
@@ -36,14 +50,24 @@ export const theme: Theme = {
       fontSize: '24px',
       fontWeight: 'bold'
     },
-    hero: {
+    hero1: {
+      fontFamily: 'body',
+      color: 'yellow',
+      fontSize: 'clamp(14px, 6vw, 18px)',
+    },
+    hero2: {
       fontFamily: 'heading',
       color: 'white',
-      fontSize: '20px'
+      fontSize: 'clamp(40px, 8vw, 80px)',
+    },
+    hero3: {
+      fontFamily: 'heading',
+      color: 'main',
+      fontSize: 'clamp(40px, 8vw, 80px)',
     },
     footer: {
       fontFamily: 'body',
-      color: 'accent',
+      color: 'main',
       fontSize: '12px'
     }
   },
@@ -56,14 +80,15 @@ export const theme: Theme = {
     },
     outlinePrimary: {
       fontFamily: 'body',
-      color: 'main',
-      backgroundColor: 'white',
+      color: 'yellow',
+      backgroundColor: 'transparent',
       border: '2px solid',
-      borderColor: 'blue',
+      borderColor: 'yellow',
       padding: '11px 20px',
+      transition: 'all 0.3s',
       '&:hover': {
-        color: 'white',
-        backgroundColor: 'blue',
+        color: 'darkBlue',
+        backgroundColor: 'yellow',
       }
     }
   }
