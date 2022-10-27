@@ -61,6 +61,11 @@ export const theme: Theme = {
       color: 'main',
       fontSize: '14px',
     },
+    nav: {
+      fontFamily: 'body',
+      color: 'white',
+      fontSize: '20px',
+    },
     hero1: {
       fontFamily: 'body',
       color: 'yellow',
