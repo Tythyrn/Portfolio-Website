@@ -32,7 +32,7 @@ const Trail = ({children}: TrailProps) => {
 
 export const Hero = () => {
   return (
-    <Box sx={{
+    <Box id='home' sx={{
       px: ['25px', '50px', '100px', '150px'],
       m: '0 auto',
       maxWidth: '1600px',
