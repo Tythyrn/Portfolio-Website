@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Portfolio-Website/static/css/main.58462fbc.css",
-    "main.js": "/Portfolio-Website/static/js/main.5babb964.js",
-    "static/media/kendall_rundquist_resume.pdf": "/Portfolio-Website/static/media/kendall_rundquist_resume.30a81c829bbf7338f46a.pdf",
-    "index.html": "/Portfolio-Website/index.html",
-    "main.58462fbc.css.map": "/Portfolio-Website/static/css/main.58462fbc.css.map",
-    "main.5babb964.js.map": "/Portfolio-Website/static/js/main.5babb964.js.map"
+    "main.css": "/static/css/main.58462fbc.css",
+    "main.js": "/static/js/main.6bdbc875.js",
+    "static/media/kendall_rundquist_resume.pdf": "/static/media/kendall_rundquist_resume.30a81c829bbf7338f46a.pdf",
+    "index.html": "/index.html",
+    "main.58462fbc.css.map": "/static/css/main.58462fbc.css.map",
+    "main.6bdbc875.js.map": "/static/js/main.6bdbc875.js.map"
   },
   "entrypoints": [
     "static/css/main.58462fbc.css",
-    "static/js/main.5babb964.js"
+    "static/js/main.6bdbc875.js"
   ]
 }
