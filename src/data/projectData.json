@@ -6,6 +6,7 @@
     "shortDescription": "Brand sites to delight and excite prospective EV customers",
     "technologies": "JavaScript | TypeScript | React | NextJS | Strapi",
     "url": "https://www.chevrolet.com/electric",
+    "urlLabel": "Chevrolet Electric Website",
     "buttonText": "VIEW SITE",
     "images": [
       {
@@ -33,6 +34,7 @@
     "shortDescription": "Custom built website generation tool",
     "technologies": "TypeScript | React | React Query | Jotai",
     "url": "https://www.chevrolet.com/electric",
+    "urlLabel": "Chevrolet Electric Website",
     "buttonText": "VIEW SITE",
     "images": [
       {
@@ -49,6 +51,7 @@
     "shortDescription": "Graphic design portfolio website built for my wife",
     "technologies": "JavaScript | React | NextJS | GraphQL | GraphCMS",
     "url": "https://lsrcreative.art",
+    "urlLabel": "LSR Creative Portfolio Website",
     "images": [
       {
         "src": "/images/lsr_creative_image_one.jpg",
@@ -67,6 +70,7 @@
   {
     "projectName": "Treehouse Full Stack JavaScript Project 5",
     "subtitleName": "PUBLIC API REQUESTS",
+    "urlLabel": "Kendall Rundquist's Treehouse Project 5 Source Code Link",
     "description": "Project 5 of the Full Stack JavaScript TechDegree program offered by Team Treehouse. The assignment was to build an employee directory using the RandomUser Generator API, JavaScript, and AJAX.",
     "shortDescription": "Mock employee directory project",
     "technologies": "JavaScript | AJAX | RandomUser Generator API",
@@ -90,6 +94,7 @@
     "shortDescription": "Mock photo gallery application",
     "technologies": "JavaScript | React | AJAX | Flickr API",
     "url": "https://github.com/Tythyrn/treehouse_project_7_react_gallery_app",
+    "urlLabel": "Kendall Rundquist's Treehouse Project 7 Source Code Link",
     "buttonText": "VIEW SOURCE CODE",
     "images": [
       {
@@ -113,6 +118,7 @@
     "shortDescription": "Mock school course full-stack application",
     "technologies": "React | SQL | Express",
     "url": "https://github.com/Tythyrn/Treehouse_Project_10_FS_App",
+    "urlLabel": "Kendall Rundquist's Treehouse Project 10 Source Code Link",
     "buttonText": "VIEW SOURCE CODE",
     "images": [
       {

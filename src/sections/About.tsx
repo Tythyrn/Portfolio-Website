@@ -62,7 +62,7 @@ export const About = () => {
                 width: '100%',
                 filter: 'grayscale(100%)',
               }}
-              src={`${process.env.PUBLIC_URL}/images/profile.jpg`}/>
+              src={`${process.env.PUBLIC_URL}/images/profile.jpg`} alt='Kendall Runqduist Profile Picture'/>
             </Box>
           </Box>
         </Box>

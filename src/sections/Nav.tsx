@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Link, Text } from 'theme-ui';
+import { Box, Button, Link, Text } from 'theme-ui';
 import { GiHamburgerMenu } from 'react-icons/gi'
+import Pdf from '../resume/kendall_rundquist_resume.pdf';
 
 export const Nav = () => {
   const [checked, setChecked] = useState(false);
@@ -34,7 +35,7 @@ export const Nav = () => {
       position: 'fixed',
       bg: 'darkBlue',
       width: '100%',
-      height: '50px',
+      height: '70px',
       display: 'flex',
       alignItems: 'center',
       justifyContent: ['flex-end', 'flex-end', 'center'],
@@ -58,37 +59,27 @@ export const Nav = () => {
         <GiHamburgerMenu />
       </Box>
       <Box sx={{
-        height: [checked ? '150px' : '0px', checked ? '150px' : '0px', 'initial'],
-        display: 'block',
+        height: [checked ? '210px' : '0px', checked ? '210px' : '0px', 'initial'],
+        display: ['block', 'block', 'flex'],
         bg: ['#2b3643', '#2b3643', 'darkBlue'],
         position: ['absolute', 'absolute', 'initial'],
         overflow: 'hidden',
-        top: '50px',
+        top: '70px',
         maxWidth: '1200px',
         left: 0,
         width: '100%',
         transition: 'height 0.3s ease-out',
         '& a': {
-          padding: '15px 20px 6px 20px',
-          display: ['block', 'block', 'inline']
+          padding: ['15px 20px 6px 20px', '15px 20px 6px 20px', '0 20px 0 20px'],
+          display: ['block', 'block', 'inline'],
+          alignSelf: 'center'
         }
       }}>
-        <Link href='#home' sx={{textDecoration: 'none'}}><Text variant='nav' id='homeNav' sx={{color: 'yellow'}}>Home</Text></Link>
-        <Link href='#about' sx={{textDecoration: 'none'}}><Text variant='nav' id='aboutNav'>About Me</Text></Link>
-        <Link href='#projects' sx={{textDecoration: 'none'}}><Text variant='nav' id='projectsNav'>Projects</Text></Link>
+        <Link href='#home' sx={{textDecoration: 'none'}} onClick={() => setChecked(false)}><Text variant='nav' id='homeNav' sx={{color: 'yellow'}}>Home</Text></Link>
+        <Link href='#about' sx={{textDecoration: 'none'}} onClick={() => setChecked(false)}><Text variant='nav' id='aboutNav'>About Me</Text></Link>
+        <Link href='#projects' sx={{textDecoration: 'none'}} onClick={() => setChecked(false)}><Text variant='nav' id='projectsNav'>Projects</Text></Link>
+        <Link sx={{ml: 'auto'}} href={Pdf} target='_blank' onClick={() => setChecked(false)}><Button variant='outlinePrimary'>Resume</Button></Link>
       </Box>
-      {/* <Box sx={{
-        display: 'flex',
-        maxWidth: '1200px',
-        width: '100%',
-        '& a': {
-          mx: '20px'
-        }
-      }}>
-        <Link href='#home' sx={{textDecoration: 'none'}}><Text variant='nav' id='homeNav' sx={{color: 'yellow'}}>Home</Text></Link>
-        <Link href='#about' sx={{textDecoration: 'none'}}><Text variant='nav' id='aboutNav'>About Me</Text></Link>
-        <Link href='#projects' sx={{textDecoration: 'none'}}><Text variant='nav' id='projectsNav'>Projects</Text></Link>
-      </Box> */}
     </Box>
   );
 }

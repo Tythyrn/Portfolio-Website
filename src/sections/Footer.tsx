@@ -15,7 +15,7 @@ export const Footer = () => {
         justifyContent: 'center',
         alignItems: 'center',
       }}>
-        <Link href='https://www.linkedin.com/in/kendall-rundquist/' target={'_blank'}>
+        <Link href='https://www.linkedin.com/in/kendall-rundquist/' target={'_blank'} aria-label='Link to Kendall Rundquist LinkedIn profile'>
           <Box sx={{
             bg: '#2b3643',
             cursor: 'pointer',
@@ -42,7 +42,7 @@ export const Footer = () => {
             <GrLinkedin />
           </Box>
         </Link>
-        <Link href='https://github.com/Tythyrn' target={'_blank'} sx={{mx: '30px'}}>
+        <Link href='https://github.com/Tythyrn' target={'_blank'} sx={{mx: '30px'}} aria-label='Link to Kendall Rundquist Github profile'>
           <Box sx={{
             bg: '#2b3643',
             cursor: 'pointer',
@@ -69,7 +69,7 @@ export const Footer = () => {
             <GrGithub />
           </Box>
         </Link>
-        <Link href='mailto:kcrundquist@gmail.com?subject=Mail from Kendall Rundquist website'>
+        <Link href='mailto:kcrundquist@gmail.com?subject=Mail from Kendall Rundquist website' aria-label='link to email Kendall Rundquist'>
           <Box sx={{
             bg: '#2b3643',
             cursor: 'pointer',
