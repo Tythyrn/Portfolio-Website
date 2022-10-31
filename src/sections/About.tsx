@@ -33,7 +33,7 @@ export const About = () => {
             </Box>
         </Box>
         <Box sx={{
-          display: ['block', 'block', 'grid'],
+          display: ['block', 'block', 'block', 'grid'],
           gridTemplateColumns: '3fr 2fr',
         }}>
           <Box sx={{
@@ -41,17 +41,18 @@ export const About = () => {
             flexDirection: 'column',
             mr: ['0', '0', '50px', '50px']
           }}>
-            <Text variant='body' sx={{mb: '20px'}}>Hello! My name is Kendall Rundquist. I have always had a passion for technology and building things. As a child, I enjoyed building countless LEGO sets and eventually building computers for myself and various friends.</Text>
-            <Text variant='body' sx={{mb: '20px'}}>In college, I decided to pursue the business side of Information Technology, graduating with a B.B.A. in Management Information Systems in 2015. It wasn't until 2020 that I decided to pursue a new career as a software engineer.</Text>
-            <Text variant='body' sx={{mb: '20px'}}>I started teaching myself programming at night, and applying the skills I was learning to my new position as a software developer during the day. I rediscovered that same enthusiam and passion in developing websites that I would get as a child building LEGO sets and that passion has fueled my career to this day.</Text>
+            <Text variant='body' sx={{mb: '20px'}}>Technology and craftsmanship have always fascinated me. As a child, I enjoyed building countless LEGO sets and when I was old enough I began building computers for myself and friends. This started me on my journey of bridging my two interests: tech and constructing things with my hands.</Text>
+            <Text variant='body' sx={{mb: '20px'}}>In college, I decided to pursue the business side of Information Technology, graduating with a B.B.A. in Management Information Systems in 2015. It wasn't until 2020 that I decided to return to my favorite childhood subjects and pursue a new career as a software engineer.</Text>
+            <Text variant='body' sx={{mb: '20px'}}>By teaching myself programming at night and applying the skills I was learning to my new position as a software developer during the day, I rediscovered that same drive and enthusiasm in developing websites that I felt as a child building LEGO sets. That drive has fueled my career to this day. Currently in my work, I utilize my skills to create new websites and tools for General Motors.</Text>
+            <Text variant='body' sx={{mb: '20px'}}>I live in Round Rock, TX with my wife and corgi. When I am not developing software, you can usually find me spending time with my family, playing the drums, cooking, or hosting a weekly game night with friends.</Text>
             <Text variant='body' sx={{mb: '20px'}}>Below are some technologies I am currently using:</Text>
             <TechGrid />
           </Box>
           <Box sx={{
             position: 'relative',
-            width: ['70%', '70%', '100%'],
+            width: ['70%', '70%', '70%', '100%'],
             maxWidth: '300px',
-            m: ['50px auto 0px', '50px auto 0px', '0'],
+            m: ['50px auto 0px', '50px auto 0px', '50px auto 0px', '0'],
           }}>
             <Box sx={{
               position: 'relative',

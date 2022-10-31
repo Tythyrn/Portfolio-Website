@@ -45,7 +45,7 @@ export const ProjectGrid = ({projects}: ProjectGridProps) => {
                 height: '260px',
               }}>
                 <Text sx={{mb: '15px'}} variant={'gridHeading'}>{project.projectName}</Text>
-                <Text variant={'gridDescription'}>{project.shortDescription}</Text>
+                <Text variant={'gridDescription'}>{project.subtitle}</Text>
                 <Text variant={'gridTech'} sx={{mt: 'auto'}}>{project.technologies}</Text>
                 <Button onClick={() => {setActiveIdx(index); setShowModal(true)}} variant={'outlinePrimary'} sx={{
                   width: '170px',

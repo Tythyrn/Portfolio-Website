@@ -91,7 +91,7 @@ export const Modal = ({show, onClose, data}: ModalProps) => {
           }}
         >
           <Text as={'h2'} variant='portfolioHeading'>{data.projectName}</Text>
-          <Text as={'h3'} variant='portfolioSubHeading' sx={{borderBottom: '1px solid rgba(0, 0, 0, 0.1)', pb: '15px'}}>{data.subtitleName}</Text>
+          <Text as={'h3'} variant='portfolioSubHeading' sx={{borderBottom: '1px solid rgba(0, 0, 0, 0.1)', pb: '15px'}}>{data.subtitle}</Text>
           <Text as={'p'} variant='portfolioDescription' sx={{mt: '15px'}}>{data.description}</Text>
           <Link href={data.url} target='_blank' aria-label={data.urlLabel}>
             <Button variant={'outlinePrimary'} sx={{

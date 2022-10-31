@@ -59,7 +59,7 @@ export const Hero = () => {
               my: '25px',
               maxWidth: '540px',
             }}>
-              <Text variant='body'>I'm a software engineer with a passion for the ever-changing landscape that is front-end web development.  Currently, I'm a Software Engineer at General Motors, developing electric vehicle brand sites.</Text>
+              <Text variant='body'> I have a passion for the fast-paced and innovative landscape that is front-end web development. Currently, I am a Software Engineer at General Motors developing electric vehicle brand websites.</Text>
             </Box>
             <Box>
               <Link href='#projects'><Button variant='outlinePrimary'>View My Work</Button></Link>
