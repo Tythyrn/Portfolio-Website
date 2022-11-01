@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Box, Button, Link, Text } from 'theme-ui';
 import { GiHamburgerMenu } from 'react-icons/gi'
+import { useSpring, animated } from 'react-spring';
 import Pdf from '../resume/kendall_rundquist_resume.pdf';
+
+const AnimatedBox = animated(Box);
 
 export const Nav = () => {
   const [checked, setChecked] = useState(false);
+  const fadeIn = useSpring({from: {opacity: 0}, to: {opacity: 1}, delay: 1000});
 
   useEffect(() => {
     const nav = document.getElementById('nav') as HTMLElement;
@@ -45,9 +49,12 @@ export const Nav = () => {
       pr: '15px',
       transition: 'all 0.3s',
     }}>
-      <Box 
+      <AnimatedBox 
         onClick={() => setChecked(!checked)}
+        style={fadeIn}
         sx={{
+          opacity: 0,
+          cursor: 'pointer',
           display: ['block', 'block', 'none'],
           color: 'main',
           '& svg': {
@@ -57,7 +64,7 @@ export const Nav = () => {
         }}
       >
         <GiHamburgerMenu />
-      </Box>
+      </AnimatedBox>
       <Box sx={{
         height: [checked ? '210px' : '0px', checked ? '210px' : '0px', 'initial'],
         display: ['block', 'block', 'flex'],
