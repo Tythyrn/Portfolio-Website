@@ -85,7 +85,7 @@ export const theme: Theme = {
       fontFamily: 'body',
       color: 'main',
       fontSize: '12px'
-    }
+    },
   },
   buttons: {
     primary: {
@@ -107,6 +107,12 @@ export const theme: Theme = {
         color: 'darkBlue',
         backgroundColor: 'yellow',
       }
+    }
+  },
+  links: {
+    link: {
+      textDecoration: 'none',
+      color: 'yellow'
     }
   }
 }
