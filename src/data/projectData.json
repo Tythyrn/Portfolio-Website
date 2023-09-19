@@ -65,44 +65,40 @@
     ]
   },
   {
-    "projectName": "Treehouse Full Stack JavaScript Project 5",
-    "subtitle": "Mock employee directory project",
-    "urlLabel": "Kendall Rundquist's Treehouse Project 5 Source Code Link",
-    "description": "Project 5 of the Full Stack JavaScript TechDegree program offered by Team Treehouse. The assignment was to build an employee directory using the RandomUser Generator API, JavaScript, and AJAX.",
-    "technologies": "JavaScript | AJAX | RandomUser Generator API",
-    "url": "https://github.com/Tythyrn/Treehouse_Project_5_Public_API_Requests",
+    "projectName": "Solitaire",
+    "subtitle": "Auto played solitaire game",
+    "urlLabel": "Solitaire",
+    "description": "This was a side project I put together to work on my knowledge of TypeScript/JavaScript and OOP. I really wanted to challenge myself by working on something that could showcase my TypeScript/JavaScript knowledge.",
+    "technologies": "JavaScript | TypeScript",
+    "url": "https://github.com/Tythyrn/solitaire-js",
     "buttonText": "VIEW SOURCE CODE",
     "images": [
       {
-        "src": "/images/treehouse_project_5_image_1.png",
-        "alt": "Treehouse Project 5 Employee Directory"
+        "src": "/images/solitaire_project.png",
+        "alt": "Solitaire Game"
       },
       {
-        "src": "/images/treehouse_project_5_image_2.png",
-        "alt": "Treehouse Project 5 Employee Directory"
+        "src": "/images/solitaire_project_2.png",
+        "alt": "Solitaire Game"
       }
     ]
   },
   {
-    "projectName": "Treehouse Full Stack JavaScript Project 7",
-    "subtitle": "Mock photo gallery application",
-    "description": "Project 7 of the Full Stack JavaScript TechDegree program offered by Team Treehouse. The assignment was to build photo gallery using the Flickr API, React, AJAX and JavaScript.",
-    "technologies": "JavaScript | React | AJAX | Flickr API",
-    "url": "https://github.com/Tythyrn/treehouse_project_7_react_gallery_app",
-    "urlLabel": "Kendall Rundquist's Treehouse Project 7 Source Code Link",
+    "projectName": "Metroidvania Game",
+    "subtitle": "Metroidvania game developed by following HeartBeast's tutorial",
+    "description": "This was a tutorial I had wanted to take for a long time. I have a huge passion for games and this tutorial was a lot of fun. I learned a lot about Godot and the GDScript language.",
+    "technologies": "Godot | GDScript",
+    "url": "https://github.com/Tythyrn/Metroidvania",
+    "urlLabel": "Metroidvania Game built with Godot",
     "buttonText": "VIEW SOURCE CODE",
     "images": [
       {
-        "src": "/images/treehouse_project_7_image_1.png",
-        "alt": "Treehouse Project 7 Photo Gallery"
+        "src": "/images/godot_metroidvania_1.png",
+        "alt": "Metroidvania Game"
       },
       {
-        "src": "/images/treehouse_project_7_image_2.png",
-        "alt": "Treehouse Project 7 Photo Gallery"
-      },
-      {
-        "src": "/images/treehouse_project_7_image_3.png",
-        "alt": "Treehouse Project 7 Photo Gallery"
+        "src": "/images/godot_metroidvania_2.png",
+        "alt": "Metroidvania Game"
       }
     ]
   },
