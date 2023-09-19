@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Box, Button, Link, Text } from 'theme-ui';
 import { GiHamburgerMenu } from 'react-icons/gi'
-import { useSpring, animated } from 'react-spring';
+import { useSpring, animated } from '@react-spring/web';
 import Pdf from '../resume/kendall_rundquist_resume.pdf';
 
 const AnimatedBox = animated(Box);

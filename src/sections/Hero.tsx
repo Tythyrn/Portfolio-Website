@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Button, Link, Text } from 'theme-ui';
-import { useTrail, config, a } from 'react-spring';
+import { useTrail, config, a } from '@react-spring/web';
 
 type TrailProps = {
   children: React.ReactNode[];
@@ -59,7 +59,7 @@ export const Hero = () => {
               my: '25px',
               maxWidth: '540px',
             }}>
-              <Text variant='body'> I have a passion for the fast-paced and innovative landscape that is front-end web development. Currently, I am a Software Engineer at General Motors developing electric vehicle brand websites.</Text>
+              <Text variant='body'> I have a passion for the fast-paced and innovative landscape that is front-end web development. Currently, I am seeking new opportunities. Please reach out to me via <Link href='https://www.linkedin.com/in/kendall-rundquist/' target='_blank' variant='link'>LinkedIn</Link>!</Text>
             </Box>
             <Box>
               <Link href='#projects'><Button variant='outlinePrimary'>View My Work</Button></Link>
