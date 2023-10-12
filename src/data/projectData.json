@@ -65,6 +65,29 @@
     ]
   },
   {
+    "projectName": "Full-Stack Movie Review Website",
+    "subtitle": "Mock movie review website",
+    "description": "This is my first project using Java and Spring Boot. It's very basic but was a lot of fun and exciting to work with a new programming language.",
+    "technologies": "React | Java | Spring Boot",
+    "url": "https://github.com/Tythyrn/Movies-Fullstack",
+    "urlLabel": "Kendall Rundquist's Full-Stack Movie Review Website",
+    "buttonText": "VIEW SOURCE CODE",
+    "images": [
+      {
+        "src": "/images/movie_review_1.png",
+        "alt": "Full-Stack Movie Review Website"
+      },
+      {
+        "src": "/images/movie_review_2.png",
+        "alt": "Full-Stack Movie Review Website"
+      },
+      {
+        "src": "/images/movie_review_3.png",
+        "alt": "Full-Stack Movie Review Website"
+      }
+    ]
+  },
+  {
     "projectName": "Solitaire",
     "subtitle": "Auto played solitaire game",
     "urlLabel": "Solitaire",
@@ -99,37 +122,6 @@
       {
         "src": "/images/godot_metroidvania_2.png",
         "alt": "Metroidvania Game"
-      }
-    ]
-  },
-  {
-    "projectName": "Treehouse Full Stack JavaScript Project 10",
-    "subtitle": "Mock school course full-stack application",
-    "description": "Project 10 of the Full Stack JavaScript TechDegree program offered by Team Treehouse. The assignment was to bring together everything learned throughout the program into a full stack school course app.  The app allowed users to sign up or sign in, and create, update, or delete courses. Built with React, SQL, and Express.",
-    "technologies": "React | SQL | Express",
-    "url": "https://github.com/Tythyrn/Treehouse_Project_10_FS_App",
-    "urlLabel": "Kendall Rundquist's Treehouse Project 10 Source Code Link",
-    "buttonText": "VIEW SOURCE CODE",
-    "images": [
-      {
-        "src": "/images/treehouse_project_10_image_1.png",
-        "alt": "Treehouse Project 10 Full Stack School Course Application"
-      },
-      {
-        "src": "/images/treehouse_project_10_image_2.png",
-        "alt": "Treehouse Project 10 Full Stack School Course Application"
-      },
-      {
-        "src": "/images/treehouse_project_10_image_3.png",
-        "alt": "Treehouse Project 10 Full Stack School Course Application"
-      },
-      {
-        "src": "/images/treehouse_project_10_image_4.png",
-        "alt": "Treehouse Project 10 Full Stack School Course Application"
-      },
-      {
-        "src": "/images/treehouse_project_10_image_5.png",
-        "alt": "Treehouse Project 10 Full Stack School Course Application"
       }
     ]
   }
